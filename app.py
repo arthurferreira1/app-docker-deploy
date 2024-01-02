@@ -1,19 +1,19 @@
 import os
 import json
-from flask import Flask, render_template, abort, url_for, json, jsonfy
+from flask import Flask, render_template, abort, url_for, json, jsonify
 
-#App
+# App
 app = Flask(__name__,template_folder='.')
 
-#carrega o arquivo
+# Carrega o arquivo
 with open('arquivo.json', 'r') as arquivo_json:
     dados = arquivo_json.read()
 
-#Rota
+# Rota
 @app.route("/")
 def index():
-    return render_template('index.html', title= "Lab5", jsonfile = json.dumps(dados))
+    return render_template('index.html', title = "Lab5", jsonfile = json.dumps(dados))
 
-#Run
+# Executa o programa
 if __name__ == '__main__':
     app.run(debug=True)

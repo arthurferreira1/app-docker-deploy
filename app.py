@@ -15,5 +15,5 @@ def index():
     return render_template('index.html', title= "Lab5", jsonfile = json.dumps(dados))
 
 #Run
-if __name__ = '__main__':
+if __name__ == '__main__':
     app.run(debug=True)

@@ -1,1 +1,1 @@
-Rodando uma aplicação WEB em Flask usando docker.
+Teste rodando uma aplicação WEB em Flask usando docker.
